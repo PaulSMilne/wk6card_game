@@ -9,5 +9,28 @@ public class Deck {
           this.deck = new ArrayList<Card>();
      }
 
+     public int cardCount(){
+          return deck.size();
+     }
+
+     public void addCard(Card card){
+          this.deck.add(card);
+     }
+
+     // public ArrayList<Card> getDeck(){
+     //      return this.deck;
+     // }
+
+     public Card drawCard(){
+          if (cardCount() > 0){
+               Card card = deck.remove(0);
+               return card;
+          }
+          return null;
+     }
+
+     public Card getCard(int index){
+          return this.deck.get(index);
+     }
 
 }
