@@ -1,7 +1,6 @@
 package game;
 
 public enum Rank {
-     ACE,
      TWO,
      THREE,
      FOUR,
@@ -13,5 +12,6 @@ public enum Rank {
      TEN,
      KNAVE,
      QUEEN,
-     KING
+     KING,
+     ACE
 }
