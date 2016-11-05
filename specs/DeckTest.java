@@ -9,7 +9,7 @@ public class DeckTest {
      @Before
      public void before(){
           deck = new Deck();
-          card = new Card(Suit.HEARTS, Rank.QUEEN, 10);
+          card = new Card(Suit.HEARTS, Rank.QUEEN);
      }
 
      @Test
@@ -43,9 +43,8 @@ public class DeckTest {
      public void canAssignValueToCard(){
           card = new Card(Suit.SPADES, Rank.ACE, 1);
           deck.addCard(card);
+          deck(0).assignValue(10);
           Card thisCard = deck.getCard(0);
-          thisCard.assignValue(10);
           assertEquals(10, thisCard.getValue());
-     
      }
 }

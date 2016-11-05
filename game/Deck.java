@@ -14,7 +14,7 @@ public class Deck {
      }
 
      public void addCard(Card card){
-          this.deck.add(card);
+          deck.add(card);
      }
 
      // public ArrayList<Card> getDeck(){
@@ -30,7 +30,11 @@ public class Deck {
      }
 
      public Card getCard(int index){
-          return this.deck.get(index);
+          return deck.get(index);
      }
 
+     public void assignValue(int cardValue) {
+          Card card = deck.get(0);
+          card.value = cardValue;
+     }
 }
