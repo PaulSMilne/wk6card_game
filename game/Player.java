@@ -3,10 +3,10 @@ import java.util.*;
 
 public class Player {
 
-     public ArrayList<Card> hand;
+     public Hand hand;
 
      public Player (){
-          this.hand = new ArrayList<Card>();
+          this.hand = new Hand();
      }
 
 }

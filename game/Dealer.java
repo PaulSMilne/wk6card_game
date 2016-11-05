@@ -3,8 +3,8 @@ import java.util.*;
 
 public class Dealer extends Player{
 
-     private ArrayList<Card> hand;
-     private ArrayList<Card> deck;
+     private Hand hand;
+     private Deck deck;
 
      public Dealer (){
           this.hand = new ArrayList<Card>();

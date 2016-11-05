@@ -17,3 +17,5 @@ One concept I'm swithering with is assigning a value to a card. At this point I 
 Since I'm creating a particular deck with particular values for a particular game, I'm going back to the idea of having a value parameter as part of a Card that takes an integer as an argument.
 
 The way I'm doing this seems a bit roundabout but I'm not sure how else to do it. I've created a player who has a hand and now I've created a dealer who can take a deck and remove a couple of cards and give it to a player. I think. I'll have to test it now which I know is the wrong way around.
+
+After trying loads of things I'm going to create a Hand class to contain the cards dealt by the dealer, and see how I get on with this.

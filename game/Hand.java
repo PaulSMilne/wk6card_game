@@ -1,28 +1,27 @@
 package game;
 import java.util.*;
 
-public class Deck {
+public class Hand {
 
-     private ArrayList<Card> deck;
+     private ArrayList<Card> hand;
 
-     public Deck(){
-          this.deck = new ArrayList<Card>();
+     public Hand(){
+          this.hand = new ArrayList<Card>();
      }
 
      public int cardCount(){
-          return deck.size();
+          return hand.size();
      }
 
      public void addCard(Card card){
-          deck.add(card);
+          hand.add(card);
      }
 
      // public ArrayList<Card> getDeck(){
      //      return this.deck;
-     
      // }
 
-     public Card drawCard(){
+     public Card discardCard(){
           if (cardCount() > 0){
                Card card = deck.remove(0);
                return card;
@@ -31,7 +30,7 @@ public class Deck {
      }
 
      public Card getCard(int index){
-          return deck.get(index);
+          return hand.get(index);
      }
 
 
