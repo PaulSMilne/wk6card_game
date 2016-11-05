@@ -38,4 +38,14 @@ public class DeckTest {
           Card thisCard = deck.getCard(0);
           assertEquals(Suit.HEARTS, thisCard.getSuit());
      }
+
+     @Test
+     public void canAssignValueToCard(){
+          card = new Card(Suit.SPADES, Rank.ACE, 1);
+          deck.addCard(card);
+          Card thisCard = deck.getCard(0);
+          thisCard.assignValue(10);
+          assertEquals(10, thisCard.getValue());
+     
+     }
 }
