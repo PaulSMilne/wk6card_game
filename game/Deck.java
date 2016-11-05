@@ -17,21 +17,13 @@ public class Deck {
           deck.add(card);
      }
 
-     // public ArrayList<Card> getDeck(){
-     //      return this.deck;
-     
-     // }
-
-     public Card drawCard(){
-          if (cardCount() > 0){
-               Card card = deck.remove(0);
-               return card;
-          }
-          return null;
-     }
-
      public Card getCard(int index){
           return deck.get(index);
+     }
+
+     public Card drawCard(){
+          Card drawnCard = deck.remove(0);
+          return drawnCard;
      }
 
 

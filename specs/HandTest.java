@@ -6,15 +6,30 @@ public class HandTest {
      Hand hand;
      Card card;
 
-     @Before 
+     @Before
      public void before(){
-          card = new Card(Suit:HEARTS, Rank:QUEEN, 10);
           hand = new Hand();
+          card = new Card(Suit.HEARTS, Rank.QUEEN, 10);
      }
 
      @Test
-     public void canAddCard(){
+     public void canCountCards(){
+          assertEquals(0, hand.cardCount());
+     }
+
+     @Test
+     public void canAddCard() {
           hand.addCard(card);
           assertEquals(1, hand.cardCount());
      }
-}
+
+     
+
+     @Test
+     public void canGetCard(){
+          hand.addCard(card);
+          Card thisCard = hand.getCard(0);
+          assertEquals(10, thisCard.getValue());
+     }
+
+ }

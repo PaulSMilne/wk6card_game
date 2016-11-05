@@ -19,3 +19,7 @@ Since I'm creating a particular deck with particular values for a particular gam
 The way I'm doing this seems a bit roundabout but I'm not sure how else to do it. I've created a player who has a hand and now I've created a dealer who can take a deck and remove a couple of cards and give it to a player. I think. I'll have to test it now which I know is the wrong way around.
 
 After trying loads of things I'm going to create a Hand class to contain the cards dealt by the dealer, and see how I get on with this.
+
+So back for a wee bit Saturday evening, I stripped my expectations back, and at the time of writing I have a Card class, a Deck Class, a Hand class, and a Player class, as well as Rank and Suit enums.
+
+I have managed to test and develop methods for adding cards to the deck and to the hand and for the player to have a hand which can also have cards added to it. So making progress, baby steps.
