@@ -33,8 +33,5 @@ public class Deck {
           return deck.get(index);
      }
 
-     public void assignValue(int cardValue) {
-          Card card = deck.get(0);
-          card.value = cardValue;
-     }
+
 }

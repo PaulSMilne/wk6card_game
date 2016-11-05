@@ -3,12 +3,12 @@ package game;
 public class Card {
      private Suit suit;
      private Rank rank;
-     public int value;
+     private int value;
 
-     public Card(Suit suit, Rank rank) {
+     public Card(Suit suit, Rank rank, int value) {
           this.suit = suit;
           this.rank = rank;
-          this.value = 0;
+          this.value = value;
      }
 
      public Suit getSuit(){
