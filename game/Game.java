@@ -5,6 +5,10 @@ public class Game {
      public Deck deck; 
      public Player player; 
      public Player dealer;
+     public Card card;
+     // private Suit suit;
+     // private Rank rank;
+     // private int value;
      //public Hand hand;
      //public Card card;
 
@@ -12,6 +16,10 @@ public class Game {
           this.deck = new Deck();
           this.player = new Player();
           this.dealer = new Player();
+          this.card = card;
+          // this.suit = suit;
+          // this.rank = rank;
+          // this.value = rank.value;
           //this.hand = hand;
           //this.card = card;
 
