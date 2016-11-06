@@ -22,4 +22,6 @@ public class Game {
           hand.addCard(card1); 
           hand.addCard(card2);
      }
+
+     public int getHandValue
 }
