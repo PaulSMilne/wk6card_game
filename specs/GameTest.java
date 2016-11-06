@@ -23,11 +23,11 @@ public class GameTest {
           player.hand = new Hand();
           dealer.hand = new Hand();
           deck = new Deck();
-          card1 = new Card(Suit.HEARTS, Rank.TEN, 10);
-          card2 = new Card(Suit.HEARTS, Rank.KNAVE, 10);
+          card1 = new Card(Suit.HEARTS, Rank.ACE, 11);
+          card2 = new Card(Suit.HEARTS, Rank.KING, 10);
           card3 = new Card(Suit.HEARTS, Rank.QUEEN, 10);
-          card4 = new Card(Suit.HEARTS, Rank.KING, 10);
-          card5 = new Card(Suit.HEARTS, Rank.ACE, 11);
+          card4 = new Card(Suit.HEARTS, Rank.KNAVE, 10);
+          card5 = new Card(Suit.HEARTS, Rank.TEN, 10);
           deck.addCard(card1);
           deck.addCard(card2);
           deck.addCard(card3);
@@ -45,7 +45,15 @@ public class GameTest {
      public void canGetHandValue(){
           game.dealHand(deck, player);
           int handValue = game.getHandValue(player);
-          assertEquals(20, handValue);
+          assertEquals(21, handValue);
+     }
+
+     @Test
+     public void canSayWinner(){
+          game.dealHand(deck, dealer);
+          game.dealHand(deck, player);
+          String winner = game.sayWinner(player, dealer);
+          assertEquals("Dealer wins.", winner);
      }
 
 }
