@@ -6,7 +6,7 @@ public class Player {
      public Hand hand;
 
      public Player (){
-          this.hand = new Hand();
+          this.hand = hand;
      }
 
 }
