@@ -29,3 +29,5 @@ Was frustrated when I went to bed on Saturday evening as nothing seemed to be wo
 Sunday was better and everything seemed to fall into place. I think a lot of trouble was happening because I wasn't understanding the role of all the instance variables and constructors in the interlocking classes. 
 
 I settled on MVP with creating a Game class that has a deal method, a get hand value method and say winner method. I didn't bother doing a deck builder as that would be what I'd do when i was ready to start playing a game. I made up a minimal deck of five cards for testing purposes and was happy with that. I'll look into the deck build method though as it's interesting.
+
+Sunday evening: I had a look at how to set values to my cards, and added an integer value property to my Rank enum with a method to get it. This has worked throughout the programe using Rank.RANK.value.
