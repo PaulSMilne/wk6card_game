@@ -23,5 +23,13 @@ public class Game {
           hand.addCard(card2);
      }
 
-     public int getHandValue
+     public int getHandValue(Player player){
+          Hand hand = player.getHand();
+          Card card1 = hand.getCard(0);
+          Card card2 = hand.getCard(1);
+          int card1Value = card1.getValue();
+          int card2Value = card2.getValue();
+          int handValue = card1Value + card2Value;
+          return handValue; 
+     }
 }

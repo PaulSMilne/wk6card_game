@@ -43,7 +43,7 @@ public class GameTest {
 
      @Test
      public void canGetHandValue(){
-          game.dealHand(deck, player)
+          game.dealHand(deck, player);
           int handValue = game.getHandValue(player);
           assertEquals(20, handValue);
      }
