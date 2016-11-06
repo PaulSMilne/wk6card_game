@@ -23,11 +23,11 @@ public class GameTest {
           player.hand = new Hand();
           dealer.hand = new Hand();
           deck = new Deck();
-          card1 = new Card(Suit.HEARTS, Rank.ACE, 11);
-          card2 = new Card(Suit.HEARTS, Rank.KING, 10);
-          card3 = new Card(Suit.HEARTS, Rank.QUEEN, 10);
-          card4 = new Card(Suit.HEARTS, Rank.KNAVE, 10);
-          card5 = new Card(Suit.HEARTS, Rank.TEN, 10);
+          card1 = new Card(Suit.HEARTS, Rank.ACE, Rank.ACE.value);
+          card2 = new Card(Suit.HEARTS, Rank.KING, Rank.KING.value);
+          card3 = new Card(Suit.HEARTS, Rank.QUEEN, Rank.QUEEN.value);
+          card4 = new Card(Suit.HEARTS, Rank.KNAVE, Rank.KNAVE.value);
+          card5 = new Card(Suit.HEARTS, Rank.TEN, Rank.TEN.value);
           deck.addCard(card1);
           deck.addCard(card2);
           deck.addCard(card3);

@@ -11,7 +11,7 @@ public class PlayerTest {
      public void before(){
           player = new Player();
           player.hand = new Hand();
-          card = new Card(Suit.HEARTS, Rank.QUEEN, 10);
+          card = new Card(Suit.HEARTS, Rank.QUEEN, Rank.QUEEN.value);
      }
 
      @Test

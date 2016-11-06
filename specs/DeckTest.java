@@ -9,7 +9,7 @@ public class DeckTest {
      @Before
      public void before(){
           deck = new Deck();
-          card = new Card(Suit.HEARTS, Rank.QUEEN, 10);
+          card = new Card(Suit.HEARTS, Rank.QUEEN, Rank.QUEEN.value);
      }
 
      @Test

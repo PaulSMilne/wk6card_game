@@ -7,7 +7,7 @@ public class CardTest {
 
      @Before
      public void before(){
-          card = new Card(Suit.HEARTS, Rank.QUEEN, 10);
+          card = new Card(Suit.HEARTS, Rank.QUEEN, Rank.QUEEN.value);
      }
 
      @Test

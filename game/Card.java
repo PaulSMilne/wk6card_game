@@ -8,7 +8,7 @@ public class Card {
      public Card(Suit suit, Rank rank, int value) {
           this.suit = suit;
           this.rank = rank;
-          this.value = value;
+          this.value = rank.value;
      }
 
      public Suit getSuit(){
