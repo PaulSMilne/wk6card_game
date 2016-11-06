@@ -3,9 +3,11 @@ import org.junit.*;
 import game.*;
 
 public class GameTest {
+     Game game;
      Player player;
      Player dealer;
-     Hand hand;
+     //Hand player.hand;
+     //Hand dealer.hand;
      Deck deck;
      Card card1;
      Card card2;
@@ -15,6 +17,7 @@ public class GameTest {
 
      @Before
      public void before(){
+          game = new Game();
           player = new Player();
           dealer = new Player();
           player.hand = new Hand();
@@ -32,9 +35,17 @@ public class GameTest {
           deck.addCard(card5);
      }
 
-     // @Test
-     // public void canDealCardFromDeckToPlayersHand() {
-     //      player.hand.dealHand(deck(0));
-     //      assertEquals(1, player.hand.cardCount());
-     // }
+     @Test
+     public void canDealHand() {
+          game.dealHand(deck, player);
+          assertEquals(2, player.hand.cardCount());
+     }
+
+     @Test
+     public void canGetHandValue(){
+          game.dealHand(deck, player)
+          int handValue = game.getHandValue(player);
+          assertEquals(20, handValue);
+     }
+
 }

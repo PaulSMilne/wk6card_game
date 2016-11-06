@@ -2,18 +2,24 @@ package game;
 import java.util.*;
 
 public class Game {
-     public Deck deck; //A Deck is an ArrayList of Cards
-     public Player player; //A Player has a Hand which also an ArrayList of Cards
+     public Deck deck; 
+     public Player player; 
+     //public Hand hand;
+     //public Card card;
 
      public Game(){
-          this.deck = deck;
-          this.player = player;
+          this.deck = new Deck();
+          this.player = new Player();
+          //this.hand = hand;
+          //this.card = card;
+
      }
-//Method to move Cards from a Deck to a Player's Hand
-     public void dealHand(Player player){  //Think this should be void as it needn't return anything.
-          Card card1 = deck.drawCard(); //the drawCard method on the Deck removes the card from index 0
-          Card card2 = deck.drawCard(); //now draws the next card which is the new "top" card
-          player.hand.add(card1); //declares player.hand to be of Hand type and adds card 1
-          player.hand.add(card2); //player.hand already declared and now adds card 2
+
+     public void dealHand(Deck deck, Player player){  
+          Card card1 = deck.drawCard(); 
+          Card card2 = deck.drawCard(); 
+          Hand hand = player.getHand();
+          hand.addCard(card1); 
+          hand.addCard(card2);
      }
 }
