@@ -33,3 +33,5 @@ I settled on MVP with creating a Game class that has a deal method, a get hand v
 Sunday evening: I had a look at how to set values to my cards, and added an integer value property to my Rank enum with a method to get it. This has worked throughout the programe using Rank.RANK.value.
 
 Last thing Sunday: I was looking at how to build a deck of cards, but realised that I was committing the sin of trying to copy code from Stack Overflow or the classnotes without really understanding what I was doing. So I've deleted it and will ask about it on Monday morning.
+
+Monday morning: looking over my code, I see that the Hand and Deck are functionally identical, so they could both be instances of a card collection, call it a Deck for convenience sake. I might at some point look at refactoring the code to make a hand an instance of Deck.
